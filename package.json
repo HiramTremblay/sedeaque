@@ -1,0 +1,74 @@
+{
+  "name": "sedeaque",
+  "description": "Batch set gitlab CI/CD variables with toml file",
+  "devDependencies": {
+    "@commitlint/cli": "8",
+    "@types/mocha": "5",
+    "@types/node": "12",
+    "@types/power-assert": "1",
+    "@types/rewire": "2",
+    "@types/rimraf": "2",
+    "@types/yargs": "13",
+    "@waiting/eslint-config": "2",
+    "coveralls": "3",
+    "debug": "^4.1.0",
+    "eslint": "6",
+    "espower-typescript": "9",
+    "intelli-espower-loader": "1",
+    "lerna": "3",
+    "mocha": "6",
+    "mocha-lcov-reporter": "1",
+    "nyc": "14",
+    "power-assert": "1",
+    "rewire": "4",
+    "rimraf": "3",
+    "rollup": "1",
+    "rollup-plugin-commonjs": "10",
+    "rollup-plugin-node-resolve": "5",
+    "rollup-plugin-terser": "5",
+    "rxrunscript": "5",
+    "ts-node": "8",
+    "typescript": "3",
+    "yargs": "15"
+  },
+  "nyc": {
+    "include": [
+      "packages/*/src/*.ts",
+      "packages/*/src/**/*.ts"
+    ],
+    "exclude": [
+      ".githooks",
+      "node_modules*",
+      "**/src/bin",
+      "**/src/domain.ts",
+      "**/src/interface.ts",
+      "**/dist",
+      "**/node_modules*",
+      "**/test",
+      "**/test*",
+      "**/*.d.ts",
+      "**/*.js"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "json",
+      "html"
+    ],
+    "all": true
+  },
+  "author": "WilliamRitchie",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HiramTremblay/sedeaque.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HiramTremblay/sedeaque.git/issues"
+  },
+  "version": "1.13.2",
+  "dependencies": {
+    "earumdoloremque": "^1.0.0",
+    "undeet": "^1.0.0"
+  }
+}
